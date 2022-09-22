@@ -46,11 +46,11 @@ fn main() {
 
     if temperature_unit == CELSIUS_UNIT {
         let temperature = (temperature * 9.0 / 5.0 + 32.0).round();
-        println!("The converted temperature is {}F.", temperature);
+        println!("The converted temperature is {temperature}{FAHRENHEIT_UNIT}.");
     } else if temperature_unit == FAHRENHEIT_UNIT {
         let temperature = ((temperature - 32.0) * 5.0 / 9.0).round();
-        println!("The converted temperature is {}C.", temperature);
+        println!("The converted temperature is {temperature}{CELSIUS_UNIT}.");
     } else {
-        println!("Nothing was converted");
+        println!("Nothing was converted.");
     }
 }
