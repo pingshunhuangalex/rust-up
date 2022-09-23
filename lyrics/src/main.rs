@@ -33,7 +33,7 @@ fn main() {
 
         for m in (0..n + 1).rev() {
             if m == 0 && n > 0 {
-                println!("and {}", PATTERNS[m].to_lowercase());
+                println!("and {}", PATTERNS[m]);
             } else {
                 println!("{}", PATTERNS[m]);
             }
